@@ -20,7 +20,7 @@
         <a href="#">Sobre</a>
     </nav>
 
-    <div class="acoes">
+    <div class="busca">
         <input class="campo-busca"
             type="search"
             id="inBusca"
@@ -45,12 +45,114 @@
     </div>
 </section>
 
-        <section>
-            <aside>
-                <h2>Filtros</h2>
-            </aside>
+<section class="area-produtos">
+           <aside class="filtros">
 
-            <section>
+    <div class="filtros-titulo">
+        <h2>Filtros</h2>
+        <button type="button">Limpar filtros</button>
+    </div>
+
+    <div class="grupo-filtro">
+        <h3>Marca</h3>
+
+        <label>
+            <input type="checkbox" name="marca" value="acer">
+            <span>Acer</span>
+            <small>(4)</small>
+        </label>
+
+        <label>
+            <input type="checkbox" name="marca" value="asus">
+            <span>ASUS</span>
+            <small>(5)</small>
+        </label>
+
+        <label>
+            <input type="checkbox" name="marca" value="dell">
+            <span>Dell</span>
+            <small>(3)</small>
+        </label>
+
+        <label>
+            <input type="checkbox" name="marca" value="lenovo">
+            <span>Lenovo</span>
+            <small>(4)</small>
+        </label>
+
+        <label>
+            <input type="checkbox" name="marca" value="hp">
+            <span>HP</span>
+            <small>(2)</small>
+        </label>
+    </div>
+
+    <div class="grupo-filtro">
+        <h3>Placa de vídeo (GPU)</h3>
+
+        <label>
+            <input type="checkbox" name="gpu" value="rtx-3050">
+            <span>RTX 3050</span>
+            <small>(3)</small>
+        </label>
+
+        <label>
+            <input type="checkbox" name="gpu" value="rtx-4050">
+            <span>RTX 4050</span>
+            <small>(5)</small>
+        </label>
+
+        <label>
+            <input type="checkbox" name="gpu" value="rtx-4060">
+            <span>RTX 4060</span>
+            <small>(4)</small>
+        </label>
+
+        <label>
+            <input type="checkbox" name="gpu" value="rtx-4070">
+            <span>RTX 4070</span>
+            <small>(2)</small>
+        </label>
+
+        <label>
+            <input type="checkbox" name="gpu" value="integrada">
+            <span>Integrada</span>
+            <small>(1)</small>
+        </label>
+    </div>
+
+    <!-- Tente criar Memória RAM seguindo o mesmo modelo -->
+
+    <!-- Tente criar Armazenamento seguindo o mesmo modelo -->
+
+    <div class="grupo-filtro">
+        <h3>Faixa de preço</h3>
+
+        <div class="valores-preco">
+            <span>R$ 0</span>
+            <span>R$ 10.000</span>
+        </div>
+
+        <input
+            class="faixa-preco"
+            type="range"
+            min="0"
+            max="10000"
+            value="10000"
+        >
+
+        <small class="preco-selecionado">até R$ 10.000</small>
+    </div>
+
+    <!-- Tente criar Parcelamento seguindo o modelo dos checkboxes -->
+
+    <button class="botao-filtrar" type="button">
+        Aplicar filtros
+    </button>
+
+</aside>
+
+            <section class="produtos">
                 <h2>Notebooks encontrados</h2>
 
                 <!-- Depois colocaremos os cards aqui -->
