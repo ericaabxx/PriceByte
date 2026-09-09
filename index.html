@@ -153,10 +153,85 @@
 </aside>
 
             <section class="produtos">
-                <h2>Notebooks encontrados</h2>
 
-                <!-- Depois colocaremos os cards aqui -->
-            </section>
+    <div class="produtos-cabecalho">
+        <h2>32 notebooks encontrados</h2>
+
+        <div class="ordenacao">
+            <label for="ordenar">Ordenar por:</label>
+
+            <select id="ordenar" name="ordenar">
+                <option value="custo-beneficio">
+                    Melhor custo-benefício
+                </option>
+
+                <option value="menor-preco">
+                    Menor preço
+                </option>
+
+                <option value="maior-preco">
+                    Maior preço
+                </option>
+
+                <option value="mais-recentes">
+                    Mais recentes
+                </option>
+            </select>
+        </div>
+    </div>
+
+<div class="grade-produtos">
+
+    <article class="card-produto">
+
+        <div class="card-topo">
+            <span class="selo-oferta">🔥 Excelente oferta</span>
+
+            <button class="botao-favorito" type="button">
+                ♡
+            </button>
+        </div>
+
+        <img
+            class="imagem-produto"
+            src="acer-nitro.png"
+            alt="Notebook Acer Nitro V15"
+        >
+
+        <div class="card-conteudo">
+            <h3>Acer Nitro V15</h3>
+
+            <p class="especificacoes">
+                Intel Core i5-13420H | RTX 4050
+                <br>
+                16 GB RAM | 512 GB SSD | 15.6"
+            </p>
+
+            <p class="preco-antigo">R$ 5.299</p>
+
+            <p class="preco-atual">R$ 4.399</p>
+
+            <p class="parcelamento">
+                12x de R$ 366,58 sem juros
+            </p>
+
+            <div class="card-rodape">
+                <span class="loja">Mercado Livre</span>
+
+                <a
+                    class="botao-oferta"
+                    href="#"
+                    target="_blank"
+                >
+                    Ver oferta →
+                </a>
+            </div>
+        </div>
+
+    </article>
+
+</div>
+</section>
         </section>
     </main>
 

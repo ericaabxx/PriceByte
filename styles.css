@@ -184,3 +184,163 @@ header {
     accent-color: #7c4dff;
     cursor: pointer;
 }
+
+
+.area-produtos {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 24px 60px;
+}
+
+.produtos {
+    flex: 1;
+}
+
+.produtos-cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.produtos-cabecalho h2 {
+    font-size: 18px;
+}
+
+.ordenacao {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ordenacao label {
+    color: #aeb6c2;
+    font-size: 13px;
+}
+
+.ordenacao select {
+    width: 230px;
+    height: 30px;
+    padding: 0 14px;
+
+    background-color: #151b22;
+    color: #d7dbe3;
+
+    border: 1px solid #35404d;
+    border-radius: 7px;
+
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+    outline: none;
+}
+
+.ordenacao select:focus {
+    border-color: #7c4dff;
+}
+
+.grade-produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.card-produto {
+    padding: 16px;
+
+    background-color: #151b22;
+    border: 1px solid #293440;
+    border-radius: 8px;
+}
+
+.card-topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.selo-oferta {
+    padding: 6px 12px;
+
+    background-color: #079447;
+    color: #ffffff;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.botao-favorito {
+    background: none;
+    color: #b8c5d6;
+    border: none;
+
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.imagem-produto {
+    display: block;
+    width: 100%;
+    height: 170px;
+    margin: 8px 0;
+
+    object-fit: contain;
+}
+
+.card-conteudo h3 {
+    margin-bottom: 6px;
+    font-size: 17px;
+}
+
+.especificacoes {
+    color: #b1bac7;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.preco-antigo {
+    margin-top: 10px;
+    color: #7f8997;
+    font-size: 13px;
+    text-decoration: line-through;
+}
+
+.preco-atual {
+    color: #35df85;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.parcelamento {
+    color: #bec5ce;
+    font-size: 13px;
+}
+
+.card-rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.loja {
+    color: #e2e5ea;
+    font-size: 13px;
+}
+
+.botao-oferta {
+    padding: 10px 18px;
+
+    background-color: #6c4cff;
+    color: #ffffff;
+
+    border-radius: 6px;
+
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+}
