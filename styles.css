@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #0f1419;
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.cabecalho {
+    height: 80px;
+    padding: 0 60px;
+    border-bottom: 1px solid #252b36;
+}
+
+.logo {
+    width: 215px;
+}
+
+.menu {
+    display: flex;
+    gap: 32px;
+}
+
+.menu a {
+    color: #b9bdc9;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #7c4dff;
+}
+
+.acoes {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.campo-busca {
+    width: 310px;
+    height: 42px;
+    padding: 0 18px;
+
+    background-color: #202534;
+    color: #ffffff;
+
+    border: 1px solid #343b50;
+    border-radius: 22px;
+
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+
+    outline: none;
+}
+
+.campo-busca::placeholder {
+    color: #9298aa;
+}
+
+.campo-busca:focus {
+    border-color: #7c4dff;
+}
+
+.banner {
+    min-height: 360px;
+    padding: 50px 60px;
+
+    background-image: url("banner.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-conteudo {
+    max-width: 650px;
+}
