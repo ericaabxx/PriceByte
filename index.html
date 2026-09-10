@@ -1,243 +1,381 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
     <title>Price Byte</title>
+
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-   <header class="cabecalho">
-
-    <img class="logo" src="logo.svg" alt="Logo Notebook Deals">
-
-    <nav class="menu">
-        <a href="#">Início</a>
-        <a href="#">Promoções</a>
-        <a href="#">Marcas</a>
-        <a href="#">Comparar</a>
-        <a href="#">Sobre</a>
-    </nav>
-
-    <div class="busca">
-        <input class="campo-busca"
-            type="search"
-            id="inBusca"
-            placeholder="Buscar notebooks, marcas, GPUs..."
+    <header class="cabecalho">
+        <img
+            class="logo"
+            src="logo.svg"
+            alt="Logo Price Byte"
         >
-    </div>
 
-</header>
+        <nav class="menu">
+            <a href="#">Início</a>
+            <a href="#">Promoções</a>
+            <a href="#">Marcas</a>
+            <a href="#">Comparar</a>
+            <a href="#">Sobre</a>
+        </nav>
+
+        <div class="busca">
+            <input
+                class="campo-busca"
+                type="search"
+                id="inBusca"
+                placeholder="Buscar notebooks, marcas, GPUs..."
+            >
+        </div>
+    </header>
 
     <main>
+
         <section class="banner">
-    <div class="banner-conteudo">
-        <h2>
-            Encontre o notebook ideal pelo
-            <span>melhor preço</span>
-        </h2>
+            <div class="banner-conteudo">
+                <h2>
+                    Encontre o notebook ideal pelo
+                    <span>melhor preço</span>
+                </h2>
 
-        <p>
-            Comparamos preços, analisamos as configurações e mostramos
-            as melhores ofertas para jogar, estudar ou trabalhar.
-        </p>
-    </div>
-</section>
+                <p>
+                    Comparamos preços, analisamos as configurações e
+                    mostramos as melhores ofertas para jogar, estudar
+                    ou trabalhar.
+                </p>
+            </div>
+        </section>
 
-<section class="area-produtos">
-           <aside class="filtros">
+        <section class="area-produtos">
 
-    <div class="filtros-titulo">
-        <h2>Filtros</h2>
-        <button type="button">Limpar filtros</button>
-    </div>
+            <aside class="filtros">
 
-    <div class="grupo-filtro">
-        <h3>Marca</h3>
+                <div class="filtros-titulo">
+                    <h2>Filtros</h2>
 
-        <label>
-            <input type="checkbox" name="marca" value="acer">
-            <span>Acer</span>
-            <small>(4)</small>
-        </label>
+                    <button
+                        class="botao-limpar"
+                        type="button"
+                    >
+                        Limpar filtros
+                    </button>
+                </div>
 
-        <label>
-            <input type="checkbox" name="marca" value="asus">
-            <span>ASUS</span>
-            <small>(5)</small>
-        </label>
+                <!-- Marca -->
 
-        <label>
-            <input type="checkbox" name="marca" value="dell">
-            <span>Dell</span>
-            <small>(3)</small>
-        </label>
+                <div class="grupo-filtro">
+                    <h3>Marca</h3>
 
-        <label>
-            <input type="checkbox" name="marca" value="lenovo">
-            <span>Lenovo</span>
-            <small>(4)</small>
-        </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="marca"
+                            value="acer"
+                        >
+                        <span>Acer</span>
+                        <small>(4)</small>
+                    </label>
 
-        <label>
-            <input type="checkbox" name="marca" value="hp">
-            <span>HP</span>
-            <small>(2)</small>
-        </label>
-    </div>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="marca"
+                            value="asus"
+                        >
+                        <span>ASUS</span>
+                        <small>(5)</small>
+                    </label>
 
-    <div class="grupo-filtro">
-        <h3>Placa de vídeo (GPU)</h3>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="marca"
+                            value="dell"
+                        >
+                        <span>Dell</span>
+                        <small>(3)</small>
+                    </label>
 
-        <label>
-            <input type="checkbox" name="gpu" value="rtx-3050">
-            <span>RTX 3050</span>
-            <small>(3)</small>
-        </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="marca"
+                            value="lenovo"
+                        >
+                        <span>Lenovo</span>
+                        <small>(4)</small>
+                    </label>
 
-        <label>
-            <input type="checkbox" name="gpu" value="rtx-4050">
-            <span>RTX 4050</span>
-            <small>(5)</small>
-        </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="marca"
+                            value="hp"
+                        >
+                        <span>HP</span>
+                        <small>(2)</small>
+                    </label>
+                </div>
 
-        <label>
-            <input type="checkbox" name="gpu" value="rtx-4060">
-            <span>RTX 4060</span>
-            <small>(4)</small>
-        </label>
+                <!-- GPU -->
 
-        <label>
-            <input type="checkbox" name="gpu" value="rtx-4070">
-            <span>RTX 4070</span>
-            <small>(2)</small>
-        </label>
+                <div class="grupo-filtro">
+                    <h3>Placa de vídeo (GPU)</h3>
 
-        <label>
-            <input type="checkbox" name="gpu" value="integrada">
-            <span>Integrada</span>
-            <small>(1)</small>
-        </label>
-    </div>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="gpu"
+                            value="rtx-3050"
+                        >
+                        <span>RTX 3050</span>
+                        <small>(3)</small>
+                    </label>
 
-    <!-- Tente criar Memória RAM seguindo o mesmo modelo -->
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="gpu"
+                            value="rtx-4050"
+                        >
+                        <span>RTX 4050</span>
+                        <small>(5)</small>
+                    </label>
 
-    <!-- Tente criar Armazenamento seguindo o mesmo modelo -->
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="gpu"
+                            value="rtx-4060"
+                        >
+                        <span>RTX 4060</span>
+                        <small>(4)</small>
+                    </label>
 
-    <div class="grupo-filtro">
-        <h3>Faixa de preço</h3>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="gpu"
+                            value="rtx-4070"
+                        >
+                        <span>RTX 4070</span>
+                        <small>(2)</small>
+                    </label>
 
-        <div class="valores-preco">
-            <span>R$ 0</span>
-            <span>R$ 10.000</span>
-        </div>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="gpu"
+                            value="integrada"
+                        >
+                        <span>Integrada</span>
+                        <small>(1)</small>
+                    </label>
+                </div>
 
-        <input
-            class="faixa-preco"
-            type="range"
-            min="0"
-            max="10000"
-            value="10000"
-        >
+                <!-- Memória RAM -->
 
-        <small class="preco-selecionado">até R$ 10.000</small>
-    </div>
+                <div class="grupo-filtro">
+                    <h3>Memória RAM</h3>
 
-    <!-- Tente criar Parcelamento seguindo o modelo dos checkboxes -->
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="ram"
+                            value="8"
+                        >
+                        <span>8 GB</span>
+                        <small>(2)</small>
+                    </label>
 
-    <button class="botao-filtrar" type="button">
-        Aplicar filtros
-    </button>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="ram"
+                            value="16"
+                        >
+                        <span>16 GB</span>
+                        <small>(10)</small>
+                    </label>
 
-</aside>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="ram"
+                            value="32"
+                        >
+                        <span>32 GB</span>
+                        <small>(2)</small>
+                    </label>
+                </div>
+
+                <!-- Armazenamento -->
+
+                <div class="grupo-filtro">
+                    <h3>Armazenamento (SSD)</h3>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="armazenamento"
+                            value="256"
+                        >
+                        <span>256 GB</span>
+                        <small>(1)</small>
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="armazenamento"
+                            value="512"
+                        >
+                        <span>512 GB</span>
+                        <small>(8)</small>
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="armazenamento"
+                            value="1024"
+                        >
+                        <span>1 TB</span>
+                        <small>(5)</small>
+                    </label>
+                </div>
+
+                <!-- Faixa de preço -->
+
+                <div class="grupo-filtro">
+                    <h3>Faixa de preço</h3>
+
+                    <div class="valores-preco">
+                        <span>R$ 0</span>
+                        <span>R$ 10.000</span>
+                    </div>
+
+                    <input
+                        class="faixa-preco"
+                        type="range"
+                        min="0"
+                        max="10000"
+                        value="10000"
+                        step="100"
+                    >
+
+                    <small class="preco-selecionado">
+                        até R$ 10.000
+                    </small>
+                </div>
+
+                <!-- Parcelamento -->
+
+                <div class="grupo-filtro">
+                    <h3>Parcelamento</h3>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="parcelamento"
+                            value="sem-juros"
+                        >
+                        <span>Sem juros</span>
+                        <small>(8)</small>
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="parcelamento"
+                            value="12-ou-mais"
+                        >
+                        <span>12x ou mais</span>
+                        <small>(10)</small>
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="parcelamento"
+                            value="24-ou-mais"
+                        >
+                        <span>24x ou mais</span>
+                        <small>(3)</small>
+                    </label>
+                </div>
+
+                <button
+                    class="botao-filtrar"
+                    type="button"
+                >
+                    Aplicar filtros
+                </button>
+
+            </aside>
 
             <section class="produtos">
 
-    <div class="produtos-cabecalho">
-        <h2>32 notebooks encontrados</h2>
+                <div class="produtos-cabecalho">
+                    <h2 class="quantidade-encontrada">
+                        0 notebooks encontrados
+                    </h2>
 
-        <div class="ordenacao">
-            <label for="ordenar">Ordenar por:</label>
+                    <div class="ordenacao">
+                        <label for="ordenar">
+                            Ordenar por:
+                        </label>
 
-            <select id="ordenar" name="ordenar">
-                <option value="custo-beneficio">
-                    Melhor custo-benefício
-                </option>
+                        <select id="ordenar" name="ordenar">
+                            <option value="custo-beneficio">
+                                Melhor custo-benefício
+                            </option>
 
-                <option value="menor-preco">
-                    Menor preço
-                </option>
+                            <option value="menor-preco">
+                                Menor preço
+                            </option>
 
-                <option value="maior-preco">
-                    Maior preço
-                </option>
+                            <option value="maior-preco">
+                                Maior preço
+                            </option>
 
-                <option value="mais-recentes">
-                    Mais recentes
-                </option>
-            </select>
-        </div>
-    </div>
+                            <option value="maior-desconto">
+                                Maior desconto
+                            </option>
+                        </select>
+                    </div>
+                </div>
 
-<div class="grade-produtos">
+                <div class="grade-produtos">
+                    <!-- O JavaScript criará os cards aqui -->
+                </div>
 
-    <article class="card-produto">
+            </section>
 
-        <div class="card-topo">
-            <span class="selo-oferta">🔥 Excelente oferta</span>
-
-            <button class="botao-favorito" type="button">
-                ♡
-            </button>
-        </div>
-
-        <img
-            class="imagem-produto"
-            src="acer-nitro.png"
-            alt="Notebook Acer Nitro V15"
-        >
-
-        <div class="card-conteudo">
-            <h3>Acer Nitro V15</h3>
-
-            <p class="especificacoes">
-                Intel Core i5-13420H | RTX 4050
-                <br>
-                16 GB RAM | 512 GB SSD | 15.6"
-            </p>
-
-            <p class="preco-antigo">R$ 5.299</p>
-
-            <p class="preco-atual">R$ 4.399</p>
-
-            <p class="parcelamento">
-                12x de R$ 366,58 sem juros
-            </p>
-
-            <div class="card-rodape">
-                <span class="loja">Mercado Livre</span>
-
-                <a
-                    class="botao-oferta"
-                    href="#"
-                    target="_blank"
-                >
-                    Ver oferta →
-                </a>
-            </div>
-        </div>
-
-    </article>
-
-</div>
-</section>
         </section>
+
     </main>
 
     <footer>
-        <p>Notebook Deals — Encontre o melhor notebook para você.</p>
+        <p>
+            Price Byte — Encontre o melhor notebook para você.
+        </p>
     </footer>
 
+    <script src="script.js"></script>
+
 </body>
+
 </html>

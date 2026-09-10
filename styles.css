@@ -344,3 +344,15 @@ header {
     font-weight: 600;
     text-decoration: none;
 }
+
+.selo-oferta.excelente {
+    background-color: #079447;
+}
+
+.selo-oferta.bom {
+    background-color: #1672e8;
+}
+
+.selo-oferta.normal {
+    background-color: #e89b13;
+}
